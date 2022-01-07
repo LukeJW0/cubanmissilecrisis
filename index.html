@@ -4,11 +4,53 @@
     <script src="unit3websitejs.jsx"></script>
 </head>
 
-<body>
+<div id="loading">
+    <img id="loading-image" src="loading2.gif" alt="Loading..." />
+</div>
+
+<body onload="onStart()">
     <div id="main">
-        <div id="buttons">
-            <button id="thesis" class="mainpagebuttons">THESIS</button>
-            <button id="firstpoint" class="mainpagebuttons">1ST POINT</button>
+        <div id="homepage">
+            <h1>The Cuban Missile Crisis</h1>
+            <div id="buttons">
+                <button id="thesis" class="mainpagebuttons" onclick="pageclicked('thesispage')">THESIS</button>
+                <button id="firstpoint" class="mainpagebuttons" onclick="pageclicked('firstpointpage')">1ST POINT</button>
+                <button id="secondpoint" class="mainpagebuttons" onclick="pageclicked('secondpointpage')">2ND POINT</button>
+                <button id="thirdpoint" class="mainpagebuttons" onclick="pageclicked('thirdpointpage')">3RD POINT</button>
+                <button id="conclusion" class="mainpagebuttons" onclick="pageclicked('conclusionpage')">CONCLUSION</button>
+            </div>
+        </div>
+        <div id="thesispage">
+            <h1>Thesis</h1>
+            <div class="paragraphtext">
+                <p1>For 13 days in 1962, Americans were in danger of being hit with nuclear attacks from the USSR. Even the U.S. Secretary of Defense at the time said “I thought it was the last Saturday I would ever see”. Fortunately, the then U.S. President, John F. Kennedy, was successful in deescalating the situation. The Cuban Missile Crisis affected the Cold War by improved international relations between the two world superpowers, weakened the USSR’s influence in Cuba, and reduced the threat of nuclear confrontation.</p1>
+            </div>
+            <img id="nytimage" src="nytcubablockade.jpeg">
+            <button id="back" class="mainpagebuttons" onclick="backpageclicked()">BACK</button>
+        </div>
+        <div id="firstpointpage">
+            <h1>First Point</h1>
+            <div class="paragraphtext">
+                <p1>The USA and USSR were able to improve their relations because of this conflict. President JFK communicated with Premier Khrushchev of the USSR. It was through a letter directly from Khrushchev to JFK that they made the deal to end the conflict. The USSR would take out their missiles from Cuba and the USA would take out their missiles from Turkey. As well, Khrushchev sent a letter to the British Government explaining how the USSR will do their part to improve relations. Saying, “I note with satisfaction your statement that the British Government intends to work towards the improvement of relations between our countries.”</p1>
+            </div>
+            <img id="letterimage" src="letterkrush.jpeg">
+            <button id="back" class="mainpagebuttons" onclick="backpageclicked()">BACK</button>
+        </div>
+        <div id="secondpointpage">
+            <h1>Second Point</h1>
+            <div class="paragraphtext">
+                <p1>Khrushchev claimed the missiles in Cuba were incapable of striking the US. Although the US believed they would eventually be able to strike Canada. He wanted the missiles there to defend Fidel Castro, an ally. They were uncomfortable with the large gap between the US and Cuba’s nuclear power. Without the missiles, the USSR had less power within Cuba. As well, the decision to take away the missiles was not liked by Castro. He was not consulted in the decision. It is believed this was a crucial aspect in his loss of power in 1964. Between then and the USSR’s collapse in 1991, their alliance was continually weakening.</p1>
+            </div>
+            <img id="fidelandkrushimage" src="castroandkrush.jpeg">
+            <button id="back" class="mainpagebuttons" onclick="backpageclicked()">BACK</button>
+        </div>
+        <div id="thirdpointpage">
+            <h1>Third Point</h1>
+            <div class="paragraphtext">
+                <p1>The USA prevented Cuba from gaining nuclear power, but also lost some nuclear power. Without the missiles in Turkey, the USA had one less card in their hand. More formally though, two nuclear treaties were signed by the two countries. The first one being the Limited Test Ban Treaty of 1963. This banned nuclear tests in the atmosphere, in space, and underwater. The second one being the Nuclear Non-Proliferation Treaty of 1968. Many countries signed this, and it set a precedent for responsible use and development of nuclear technology. Finally, following the crisis, a hotline was set up from the USA to the USSR. This way JFK and Khrushchev could quickly contact each other to prevent future problems.</p1>
+            </div>
+            <img id="distanceimage" src="distances-of-major-cites-from-cuba.jpeg">
+            <button id="back" class="mainpagebuttons" onclick="backpageclicked()">BACK</button>
         </div>
     </div>
 </body>
