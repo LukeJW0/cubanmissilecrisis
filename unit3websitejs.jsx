@@ -7,6 +7,7 @@ function onStart() {
     document.getElementById("firstpointpage").style.display = "none";
     document.getElementById("secondpointpage").style.display = "none";
     document.getElementById("thirdpointpage").style.display = "none";
+    document.getElementById("conclusionpage").style.display = "none";
 
     var loadingscreen = document.getElementById("loading");
     loadingscreen.style.display = "none";
